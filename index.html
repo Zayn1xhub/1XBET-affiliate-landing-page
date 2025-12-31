@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1XBET Global Partner | Exclusive Bonus Code WIKI28</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif;
+            background-color: #0b141e; 
+            color: #ffffff; 
+            overflow-x: hidden; /* Prevent horizontal scroll from animations */
+        }
+
+        /* --- 1. HERO PARALLAX & ENTRANCE --- */
+        .hero-bg {
+            /* Initial entrance animation */
+            animation: heroParallax 1.5s ease-out forwards;
+            will-change: transform, opacity, filter;
+            transform: translateZ(0); /* Hardware acceleration */
+        }
+
+        @keyframes heroParallax {
+            0% { opacity: 0; transform: scale(1.1) translateY(-20px); filter: blur(10px); }
+            100% { opacity: 0.3; transform: scale(1) translateY(0); filter: blur(0px); }
+        }
+
+        /* Staggered Content Entry */
+        .hero-content > * {
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeUp 1s ease-out forwards;
+        }
+
+        .hero-content > *:nth-child(1) { animation-delay: 0.2s; }
+        .hero-content > *:nth-child(2) { animation-delay: 0.4s; }
+        .hero-content > *:nth-child(3) { animation-delay: 0.6s; }
+        .hero-content > *:nth-child(4) { animation-delay: 0.8s; }
+
+        @keyframes fadeUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* --- 2. SEAMLESS MARQUEE --- */
+        .animate-marquee {
+            animation: marquee 40s linear infinite;
+            display: flex;
+            gap: 3rem; /* Spacing between items */
+            width: max-content;
+        }
+
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); } /* Move half width since content is duplicated */
+        }
+
+        /* --- 3. SCROLL REVEAL ANIMATIONS --- */
+        .reveal {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Stagger children inside reveals automatically via JS logic later */
+        .reveal > * {
+            transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+            transition-delay: calc(var(--delay) * 0.1s);
+        }
+
+        /* --- 4. ENHANCED GLASS PANELS --- */
+        .glass-panel { 
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255, 255, 255, 0.08); 
+            transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+        }
+
+        .glass-panel:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(0, 112, 244, 0.15);
+            border-color: rgba(59, 130, 246, 0.5);
+        }
+
+        /* Utility Gradients */
+        .accent-gradient { background: linear-gradient(135deg, #1e90ff 0%, #00d2ff 100%); }
+        .casino-gradient { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); }
+        .text-glow { text-shadow: 0 0 15px rgba(30, 144, 255, 0.5); }
+        
+        .glow-btn { 
+            box-shadow: 0 0 20px rgba(30, 144, 255, 0.3);
+            transition: all 0.3s ease; 
+        }
+        .glow-btn:hover { 
+            box-shadow: 0 0 35px rgba(30, 144, 255, 0.6);
+            transform: translateY(-2px); 
+        }
+
+        /* Range Slider Styling */
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            background: #1e90ff;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(30, 144, 255, 0.5);
+            border: 3px solid white;
+        }
+
+        .region-btn.active { 
+            background: #1e90ff; 
+            color: white; 
+            border-color: transparent;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-panel py-4 border-b border-white/5">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-3xl font-black italic tracking-tighter text-blue-500">1X<span class="text-white">BET</span></span>
+                <span class="bg-blue-600/20 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-500/30 uppercase tracking-widest hidden sm:inline">Official Partner</span>
+            </div>
+            <div class="hidden lg:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-400">
+                <a href="#sports" class="hover:text-blue-400 transition duration-300">Sports</a>
+                <a href="#casino" class="hover:text-blue-400 transition duration-300">Casino</a>
+                <a href="#bonuses" class="hover:text-blue-400 transition duration-300">Bonus Structure</a>
+                <a href="#mobile" class="hover:text-blue-400 transition duration-300">Mobile App</a>
+            </div>
+            <a href="https://1xbet.com" target="_blank" class="accent-gradient px-6 py-2 rounded-full text-xs font-bold shadow-lg hover:scale-105 transition active:scale-95 uppercase tracking-wider">Join Now</a>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+        <div class="absolute inset-0 hero-bg overflow-hidden">
+             <img src="https://placehold.co/1920x1080/000000/1e90ff?text=Modern+Stadium+Background" alt="Background" class="w-full h-full object-cover opacity-30" id="heroImage">
+        </div>
+        
+        <div class="absolute inset-0 bg-gradient-to-b from-[#0b141e] via-transparent to-[#0b141e]"></div>
+        
+        <div class="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-16 items-center hero-content">
+            <div>
+                <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-bold mb-8 animate-pulse">
+                    <span class="material-symbols-outlined text-sm mr-2">verified</span>
+                    OFFICIAL 2025 PROMO CODE: <span class="text-white ml-2 font-black tracking-widest">WIKI28</span>
+                </div>
+                
+                <h1 class="text-6xl lg:text-8xl font-black leading-none mb-6 uppercase tracking-tighter">
+                    CLAIM YOUR <span class="text-transparent bg-clip-text accent-gradient text-glow">MAX BONUS</span>
+                </h1>
+                
+                <p class="text-gray-400 text-lg lg:text-xl mb-10 max-w-xl leading-relaxed">
+                    Elevate your game with the ultimate betting experience.
+                    Get a <span class="text-white font-bold">100% to 200% Welcome Bonus</span> exclusively with code <span class="text-blue-400 font-bold">WIKI28</span>. Global access, local rewards.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button onclick="triggerConfetti()" class="accent-gradient px-10 py-5 rounded-2xl text-lg font-black shadow-2xl glow-btn flex items-center justify-center group">
+                        GET STARTED
+                        <span class="material-symbols-outlined ml-3 group-hover:translate-x-1 transition">trending_up</span>
+                    </button>
+                    <div class="flex items-center space-x-4 px-6 py-4 glass-panel rounded-2xl border border-white/10">
+                        <span class="text-xs text-gray-500 font-bold uppercase tracking-widest">Bonus Rate:</span>
+                        <span class="text-xl font-black text-blue-400">100% - 200%</span>
+                    </div>
+                </div>
+
+                <div class="mt-12 flex items-center gap-8 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-500">
+                    <div class="flex flex-col">
+                        <span class="text-2xl font-black">60+</span>
+                        <span class="text-[10px] uppercase font-bold text-gray-500">Sports</span>
+                    </div>
+                    <div class="h-8 w-px bg-white/10"></div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl font-black">1M+</span>
+                        <span class="text-[10px] uppercase font-bold text-gray-500">Players</span>
+                    </div>
+                    <div class="h-8 w-px bg-white/10"></div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl font-black">24/7</span>
+                        <span class="text-[10px] uppercase font-bold text-gray-500">Support</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-panel p-10 rounded-[2.5rem] border border-white/10 relative">
+                <div class="absolute -top-4 -right-4 bg-red-600 text-white text-[10px] font-black px-4 py-2 rounded-full shadow-lg uppercase tracking-tighter z-20">Limited Offer</div>
+                
+                <h3 class="text-2xl font-black mb-8 flex items-center">
+                    <span class="material-symbols-outlined mr-3 text-blue-400">calculate</span>
+                    BONUS ESTIMATOR
+                </h3>
+
+                <div class="space-y-8">
+                    <div>
+                        <label class="block text-[10px] text-gray-500 font-black uppercase tracking-widest mb-4">1. Select Your Region</label>
+                        <div class="grid grid-cols-3 gap-3">
+                            <button onclick="updateRegion(2.0, this)" class="region-btn active py-3 rounded-xl text-xs font-black border border-white/10 hover:border-blue-500 transition uppercase">Africa (200%)</button>
+                            <button onclick="updateRegion(1.3, this)" class="region-btn py-3 rounded-xl text-xs font-black border border-white/10 hover:border-blue-500 transition uppercase">LatAm/Asia (130%)</button>
+                            <button onclick="updateRegion(1.0, this)" class="region-btn py-3 rounded-xl text-xs font-black border border-white/10 hover:border-blue-500 transition uppercase">Global (100%)</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-[10px] text-gray-500 font-black uppercase tracking-widest mb-4">2. First Deposit Amount</label>
+                        <input type="range" id="depositSlider" min="10" max="1000" value="100" class="w-full h-1.5 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-blue-500">
+                        <div class="flex justify-between items-end mt-4">
+                            <span class="text-gray-600 text-[10px] font-bold">$10</span>
+                            <span class="text-4xl font-black text-white">$<span id="depositAmt">100</span></span>
+                            <span class="text-gray-600 text-[10px] font-bold">$1000+</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-blue-600/10 p-5 rounded-3xl border border-blue-500/20">
+                            <p class="text-[9px] text-blue-400 font-black uppercase tracking-widest mb-1">Bonus You Get</p>
+                            <p class="text-3xl font-black text-white">+$<span id="bonusAmt">200</span></p>
+                        </div>
+                        <div class="bg-green-600/10 p-5 rounded-3xl border border-green-500/20">
+                            <p class="text-[9px] text-green-400 font-black uppercase tracking-widest mb-1">Total to Play</p>
+                            <p class="text-3xl font-black text-white">$<span id="totalAmt">300</span></p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-black/40 rounded-3xl border border-white/5 text-center">
+                        <p class="text-[10px] text-gray-500 font-bold mb-3 uppercase tracking-widest">Unlock with unique code:</p>
+                        <div class="flex items-center justify-between bg-blue-500/10 px-6 py-4 rounded-2xl border border-blue-500/30">
+                            <span class="text-2xl font-black tracking-widest text-blue-400" id="promoCodeText">WIKI28</span>
+                            <button onclick="copyPromo()" class="text-[10px] font-black bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-400 transition uppercase">Copy</button>
+                        </div>
+                    </div>
+
+                    <p class="text-[9px] text-center text-gray-600 italic">Percentages vary by region (100%-200%). Subject to T&Cs. Play responsibly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-black/60 border-y border-white/5 py-3 relative z-20">
+        <div class="flex overflow-hidden">
+            <div class="flex animate-marquee">
+                <div class="flex items-center space-x-3 shrink-0">
+                    <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">PL: Liverpool vs Chelsea</span>
+                    <span class="text-blue-400 font-black text-xs">1.85 | 3.40 | 4.10</span>
+                </div>
+                <div class="flex items-center space-x-3 shrink-0">
+                    <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">LL: Real Madrid vs Atletico</span>
+                    <span class="text-blue-400 font-black text-xs">2.10 | 3.25 | 3.00</span>
+                </div>
+                <div class="flex items-center space-x-3 shrink-0">
+                    <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">NBA: Lakers vs Celtics</span>
+                    <span class="text-blue-400 font-black text-xs">1.91 | 1.89</span>
+                </div>
+                <div class="flex items-center space-x-3 shrink-0">
+                    <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">UCL: Bayern vs PSG</span>
+                    <span class="text-blue-400 font-black text-xs">1.72 | 3.80 | 4.50</span>
+                </div>
+                
+                <div class="flex items-center space-x-3 shrink-0">
+                    <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">PL: Liverpool vs Chelsea</span>
+                    <span class="text-blue-400 font-black text-xs">1.85 | 3.40 | 4.10</span>
+                </div>
+                <div class="flex items-center space-x-3 shrink-0">
+                    <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">LL: Real Madrid vs Atletico</span>
+                    <span class="text-blue-400 font-black text-xs">2.10 | 3.25 | 3.00</span>
+                </div>
+                <div class="flex items-center space-x-3 shrink-0">
+                    <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">NBA: Lakers vs Celtics</span>
+                    <span class="text-blue-400 font-black text-xs">1.91 | 1.89</span>
+                </div>
+                <div class="flex items-center space-x-3 shrink-0">
+                    <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">UCL: Bayern vs PSG</span>
+                    <span class="text-blue-400 font-black text-xs">1.72 | 3.80 | 4.50</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-32 bg-[#0b141e] reveal" id="sports">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-4xl lg:text-5xl font-black mb-6 uppercase tracking-tighter">Engineered for <span class="text-blue-500">Victory</span></h2>
+                <p class="text-gray-500 leading-relaxed">Access a world-class betting ecosystem designed for high performance, maximum security, and the best market odds available today.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="glass-panel p-8 rounded-[2rem] group">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <span class="material-symbols-outlined text-blue-400 text-3xl">live_tv</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 uppercase tracking-tight">Live Streaming</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Watch over 10,000 events monthly in full HD while placing live bets in real-time.</p>
+                </div>
+                <div class="glass-panel p-8 rounded-[2rem] group">
+                    <div class="w-14 h-14 rounded-2xl bg-green-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <span class="material-symbols-outlined text-green-400 text-3xl">payments</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 uppercase tracking-tight">Rapid Payouts</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Experience lightning-fast withdrawals with 60+ payment methods supported worldwide.</p>
+                </div>
+                <div class="glass-panel p-8 rounded-[2rem] group">
+                    <div class="w-14 h-14 rounded-2xl bg-orange-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <span class="material-symbols-outlined text-orange-400 text-3xl">shield</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 uppercase tracking-tight">Secure & Fair</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Licensed by Curacao eGaming. Advanced encryption protects your data and funds 24/7.</p>
+                </div>
+                <div class="glass-panel p-8 rounded-[2rem] group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <span class="material-symbols-outlined text-purple-400 text-3xl">currency_bitcoin</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 uppercase tracking-tight">Crypto Ready</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Full support for Bitcoin, Ethereum, USDT, and 25+ major cryptocurrencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative py-32 bg-black overflow-hidden reveal" id="casino">
+        <img src="https://placehold.co/1920x1080/000000/e67e22?text=Luxury+Casino+Background" alt="Casino" class="absolute inset-0 w-full h-full object-cover opacity-30">
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+        
+        <div class="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-20 items-center">
+            <div>
+                <h2 class="text-5xl lg:text-7xl font-black mb-8 uppercase leading-none tracking-tighter">Elite <span class="text-transparent bg-clip-text casino-gradient">Casino</span> Experience</h2>
+                <p class="text-gray-300 text-lg mb-10 leading-relaxed max-w-xl">
+                    Unlock a library of 3,000+ premium slots, live dealers, and exclusive 1xGames.
+                    Use code <span class="text-orange-400 font-bold">WIKI28</span> to claim up to <span class="text-white font-black">€1,500 + 150 Free Spins</span>.
+                </p>
+                <div class="grid grid-cols-2 gap-4 mb-12">
+                    <div class="flex items-center space-x-3">
+                        <span class="material-symbols-outlined text-orange-500">check_circle</span>
+                        <span class="text-sm font-bold uppercase tracking-widest">Live Roulette</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="material-symbols-outlined text-orange-500">check_circle</span>
+                        <span class="text-sm font-bold uppercase tracking-widest">Blackjack Elite</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="material-symbols-outlined text-orange-500">check_circle</span>
+                        <span class="text-sm font-bold uppercase tracking-widest">Progressive Slots</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="material-symbols-outlined text-orange-500">check_circle</span>
+                        <span class="text-sm font-bold uppercase tracking-widest">Instant Wins</span>
+                    </div>
+                </div>
+                <a href="https://1xbet.com" target="_blank" class="casino-gradient px-12 py-5 rounded-2xl text-lg font-black shadow-2xl hover:brightness-110 transition inline-block uppercase tracking-widest hover:scale-105">Enter Casino</a>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-4">
+                    <img src="https://placehold.co/400x400/111/fff?text=Roulette+Wheel" alt="Roulette" class="glass-panel rounded-3xl shadow-2xl border border-white/10 transform hover:-rotate-3 transition duration-500">
+                    <img src="https://placehold.co/400x400/111/fff?text=Casino+Chips" alt="Chips" class="glass-panel rounded-3xl shadow-2xl border border-white/10">
+                </div>
+                <div class="pt-12">
+                    <img src="https://placehold.co/300x400/111/fff?text=Live+Dealer" alt="Live Dealer" class="glass-panel rounded-3xl shadow-2xl border border-white/10 transform hover:rotate-3 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-[#0b141e] reveal" id="mobile">
+        <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-20">
+            <div class="lg:w-1/2 relative">
+                <div class="absolute inset-0 bg-blue-500/20 blur-[120px] rounded-full"></div>
+                <img src="https://placehold.co/800x600/0b141e/1e90ff?text=App+Interface" alt="App Interface" class="relative z-10 w-full drop-shadow-2xl">
+            </div>
+            <div class="lg:w-1/2">
+                <h2 class="text-4xl lg:text-5xl font-black mb-6 uppercase tracking-tighter">Your Bets, <span class="text-blue-500">Everywhere</span></h2>
+                <p class="text-gray-500 text-lg mb-10 leading-relaxed">
+                    The 1XBET mobile application is a powerhouse of features.
+                    Biometric login, lightning-fast navigation, and exclusive app-only bonuses. Register with code <span class="text-white font-bold">WIKI28</span> directly from the app.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                    <a href="https://1xbet.com" target="_blank" class="glass-panel p-5 rounded-2xl flex items-center space-x-4 border border-white/10 flex-1">
+                        <span class="material-symbols-outlined text-4xl text-blue-400">radio_button_unchecked</span>
+                        <div>
+                            <p class="text-[9px] text-gray-500 uppercase font-black">Download for</p>
+                            <p class="font-bold">iOS Devices</p>
+                        </div>
+                    </a>
+                    <a href="https://1xbet.com" target="_blank" class="glass-panel p-5 rounded-2xl flex items-center space-x-4 border border-white/10 flex-1">
+                        <span class="material-symbols-outlined text-4xl text-green-400">android</span>
+                        <div>
+                            <p class="text-[9px] text-gray-500 uppercase font-black">Download for</p>
+                            <p class="font-bold">Android APK</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex items-center p-4 bg-blue-500/5 rounded-2xl border border-blue-500/20">
+                    <span class="material-symbols-outlined text-blue-400 mr-4">info</span>
+                    <p class="text-xs text-gray-400">Scan the official QR code on the desktop site for a direct, secure download link.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-black/40 border-y border-white/5 reveal">
+        <div class="container mx-auto px-6">
+            <h5 class="text-center text-[10px] text-gray-600 font-black uppercase tracking-[0.3em] mb-12">Global Settlement Partners</h5>
+            <div class="flex flex-wrap justify-center items-center gap-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 transition duration-1000">
+                <img src="https://placehold.co/100x40/333/fff?text=Visa" alt="Visa" class="h-6">
+                <img src="https://placehold.co/100x40/333/fff?text=Mastercard" alt="Mastercard" class="h-6">
+                <img src="https://placehold.co/100x40/333/fff?text=Skrill" alt="Skrill" class="h-6">
+                <img src="https://placehold.co/100x40/333/fff?text=Neteller" alt="Neteller" class="h-6">
+                <img src="https://placehold.co/100x40/333/fff?text=Bitcoin" alt="Bitcoin" class="h-6">
+                <img src="https://placehold.co/100x40/333/fff?text=Tether" alt="Tether" class="h-6">
+                <img src="https://placehold.co/100x40/333/fff?text=ApplePay" alt="Apple Pay" class="h-6">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-[#0b141e] reveal" id="bonuses">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-black mb-4 uppercase tracking-tighter">Global <span class="text-blue-500">Bonus Distribution</span></h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">Using code <span class="text-white font-bold">WIKI28</span> ensures you receive the maximum possible reward for your location. Below is the standard distribution.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-panel p-10 rounded-[2.5rem] border border-white/5">
+                    <div class="text-5xl font-black text-blue-500 mb-4">200%</div>
+                    <h4 class="text-xl font-bold mb-4 uppercase">Tier 1 Regions</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">Nigeria, Kenya, Ghana, Uganda, and several African territories are eligible for the maximum 200% bonus up to local currency equivalents.</p>
+                    <div class="pt-6 border-t border-white/5 text-[10px] font-bold text-blue-400 uppercase tracking-widest">Active: WIKI28</div>
+                </div>
+                <div class="glass-panel p-10 rounded-[2.5rem] border-2 border-blue-500 relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-500 text-white text-[9px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest">Most Popular</div>
+                    <div class="text-5xl font-black text-blue-500 mb-4">130%</div>
+                    <h4 class="text-xl font-bold mb-4 uppercase">Tier 2 Regions</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">India, Brazil, Mexico, and major parts of SE Asia/LATAM receive a boosted 130% bonus (standard is 100%) exclusively through this code.</p>
+                    <div class="pt-6 border-t border-white/5 text-[10px] font-bold text-blue-400 uppercase tracking-widest">Active: WIKI28</div>
+                </div>
+                <div class="glass-panel p-10 rounded-[2.5rem] border border-white/5">
+                    <div class="text-5xl font-black text-blue-500 mb-4">100%</div>
+                    <h4 class="text-xl font-bold mb-4 uppercase">Standard Regions</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">European territories and standard international regions receive a robust 100% matching deposit bonus on all sign-ups.</p>
+                    <div class="pt-6 border-t border-white/5 text-[10px] font-bold text-blue-400 uppercase tracking-widest">Active: WIKI28</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 bg-black text-center border-t border-white/5 reveal">
+        <div class="container mx-auto px-6">
+            <span class="text-3xl font-black italic tracking-tighter text-blue-500 mb-10 block uppercase">1XBET <span class="text-white/20">Partner</span></span>
+            <div class="max-w-4xl mx-auto mb-12">
+                <p class="text-[10px] text-gray-600 font-bold uppercase tracking-widest leading-loose">
+                    THE PROMO CODE <span class="text-white">WIKI28</span> IS PROVIDED BY AUTHORIZED 1XBET PARTNERS.
+                    BONUSES RANGE FROM 100% TO 200% BASED ON REGION. GAMBLING IS ADDICTIVE - PLEASE PLAY RESPONSIBLY. 18+ ONLY.
+                    OPERATED BY CAECUS N.V. UNDER CURACAO LICENSE 1668/JAZ.
+                </p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-10 text-[10px] font-black uppercase tracking-[0.2em] text-gray-500">
+                <a href="#" class="hover:text-blue-400 transition">Privacy</a>
+                <a href="#" class="hover:text-blue-400 transition">Responsible Gaming</a>
+                <a href="#" class="hover:text-blue-400 transition">Terms</a>
+                <a href="#" class="hover:text-blue-400 transition">T&Cs</a>
+            </div>
+            <p class="mt-12 text-[10px] text-gray-800">© 2025 1XBET GLOBAL AFFILIATE NETWORK. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- 1. INTERSECTION OBSERVER FOR SCROLL REVEALS ---
+        const reveals = document.querySelectorAll('.reveal');
+        
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              // Optional: stagger children animations inside sections
+              entry.target.querySelectorAll('*').forEach((child, i) => {
+                // Only apply stagger if not too deep
+                if(i < 10) child.style.setProperty('--delay', i);
+              });
+            }
+          });
+        }, { threshold: 0.15 });
+        
+        reveals.forEach(el => observer.observe(el));
+
+        // --- 2. ACTIVE NAV HIGHLIGHT ---
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            
+            let current = '';
+            sections.forEach(sec => {
+                const sectionTop = sec.offsetTop;
+                if (window.scrollY >= sectionTop - 150) {
+                    current = sec.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('text-blue-400');
+                if (link.getAttribute('href').includes(current) && current !== '') {
+                    link.classList.add('text-blue-400');
+                }
+            });
+        });
+
+        // --- 3. HERO SCROLL PARALLAX (JS Enhancement) ---
+        // While CSS handles the entrance, this adds the "move on scroll" feeling
+        window.addEventListener('scroll', () => {
+            const heroImage = document.getElementById('heroImage');
+            const scrollPosition = window.scrollY;
+            if(scrollPosition < 800) {
+                // Move image slower than scroll speed
+                heroImage.style.transform = `translateY(${scrollPosition * 0.4}px)`;
+            }
+        });
+
+        // --- 4. CALCULATOR LOGIC ---
+        let currentMultiplier = 2.0; // Default: Africa
+
+        const slider = document.getElementById('depositSlider');
+        const depositDisplay = document.getElementById('depositAmt');
+        const bonusDisplay = document.getElementById('bonusAmt');
+        const totalDisplay = document.getElementById('totalAmt');
+
+        function updateCalc() {
+            const deposit = parseInt(slider.value);
+            const bonus = Math.floor(deposit * currentMultiplier);
+            const total = deposit + bonus;
+
+            depositDisplay.innerText = deposit;
+            bonusDisplay.innerText = bonus;
+            totalDisplay.innerText = total;
+        }
+
+        function updateRegion(multiplier, el) {
+            currentMultiplier = multiplier;
+            // UI Toggle
+            document.querySelectorAll('.region-btn').forEach(btn => btn.classList.remove('active'));
+            el.classList.add('active');
+            
+            updateCalc();
+        }
+
+        function copyPromo() {
+            navigator.clipboard.writeText('WIKI28').then(() => {
+                const btn = event.target;
+                const originalText = btn.innerText;
+                btn.innerText = 'COPIED!';
+                btn.style.background = '#22c55e';
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.style.background = '';
+                }, 2000);
+            });
+        }
+
+        function triggerConfetti() {
+            confetti({
+                particleCount: 150,
+                spread: 70,
+                origin: { y: 0.6 },
+                colors: ['#1e90ff', '#ffffff', '#00d2ff']
+            });
+            
+            setTimeout(() => {
+                window.open('https://1xbet.com', '_blank');
+            }, 1000);
+        }
+
+        slider.addEventListener('input', updateCalc);
+        updateCalc();
+    </script>
+</body>
+</html>
